@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-Security-Policy"
+    content="default-src 'self' ;
+    img-src 'self' https://image.tmdb.org ;
+    style-src 'self' https://use.fontawesome.com 'unsafe-inline' ; 
+    script-src 'self' 'unsafe-inline' ;
+    font-src https://use.fontawesome.com ;
+    connect-src 'self' https://api.themoviedb.org ;
+    "/>
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+ integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <main>
+        
+<!-- PAGE 1 -->
+        <div id="search" class="">
+            <h1>SEARCH MOVIE BY ACTOR</h1>
+            <input type="text" value="" id="searchBar">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+<!-- PAGE 2 -->
+        <div id="actors" class="hide">
+            <!-- <div class="itemCtn">
+                <div class="imgCtn">
+                <img class="actorImg" src="https://image.tmdb.org/t/p/w200/kqjL17yufvn9OVLyXYpvtyrFfak.jpg" alt="">
+                </div>
+                <p class="personName">max</p>
+            </div> -->
+        </div>
+        
+<!-- PAGE 3 -->
+        <div id="movies" class="hide">
+            <!-- <h1 class="actorName">Robert</h1>
+            <div class="itemCtn">
+                <div class="imgCtn movieImgCtn">
+                    <img class="movieImg" src="https://image.tmdb.org/t/p/w200/cezWGskPY5x7GaglTTRN4Fugfb8.jpg" alt="movie image">
+                </div>
+                <div class="textCtn">
+                    <p class="date">2019</p>
+                    <p class="title">avengers</p>
+                </div>
+            </div> -->
+        </div>
+        
+<!-- PAGE 4 -->
+        <div id="detail" class="hide">
+            <div id="moviedetail">
+                    <!-- <div class="imgCtn detailImgCtn">
+                        <img class="detailImg" src="" alt=""/>
+                    </div>
+                <div class="detailTitle"></div>
+                <div class="detailDate"></div>
+                <div class="detailGenres"></div> -->
+            </div>
+            <div id="moviecast">
+                <h3>CAST:</h3>
+                <!-- <p class="cast"></p> -->
+            </div>
+        </div>
+
+<!-- float action button -->
+        <div id="fab" class="hide">
+                <i class="fas fa-search"></i>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
